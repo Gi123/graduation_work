@@ -1,0 +1,33 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.2)
+
+PROJECT(ClickHouseDAO VERSION 0.0.1)
+
+FILE(GLOB ClickHouseDAO_file_cpp
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+)
+SET(CLICKHOUSE_DIR "/home/ivan/OldDesk/Project/clickhouse-cpp/")
+#INCLUDE (subdirs)
+
+ADD_EXECUTABLE(${PROJECT_NAME}
+    ${ClickHouseDAO_file_cpp}
+)
+SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES 
+    CMAKE_CXX_STANDARD 17
+    CMAKE_CXX_STANDARD_REQUIRED ON
+)
+
+TARGET_INCLUDE_DIRECTORIES(${PROJECT_NAME}
+    PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+include_directories(
+    ${CLICKHOUSE_DIR}
+)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+    /home/ivan/OldDesk/Project/clickhouse-cpp/build/clickhouse/libclickhouse-cpp-lib.so
+)
+#TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+#    clickhouse-cpp-lib
+#)
+FIND_PACKAGE(absl REQUIRED)
+#ADD_SUBDIRECTORY(${CLICKHOUSE_DIR})
