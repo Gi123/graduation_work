@@ -1,0 +1,39 @@
+[1m../../../OldDesk/Project/graduation_work/build/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.c:0:0: [31minformation:[39m Too many #ifdef configurations - cppcheck only checks 12 of 143 configurations. Use --force to check all configurations. [toomanyconfigs][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/build/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp:0:0: [31minformation:[39m Too many #ifdef configurations - cppcheck only checks 12 of 141 configurations. Use --force to check all configurations. [toomanyconfigs][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/main.cpp:1:0: [31minformation:[39m Include file: "valpotdao.hpp" not found. [missingInclude][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/main.cpp:3:0: [31minformation:[39m Include file: <algorithm> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/main.cpp:4:0: [31minformation:[39m Include file: <chrono> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/main.cpp:5:0: [31minformation:[39m Include file: <ctime> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/main.cpp:6:0: [31minformation:[39m Include file: <iomanip> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/main.cpp:7:0: [31minformation:[39m Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/main.cpp:26:31: [31mstyle:[39m Variable 'array' is assigned a value that is never used. [unreadVariable][0m
+        std::vector<avgArray> array = client.getValAvg(name_coms);
+                              ^
+[1m../../../OldDesk/Project/graduation_work/src/valpot.cpp:1:0: [31minformation:[39m Include file: "valpot.hpp" not found. [missingInclude][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/valpotdao.cpp:1:0: [31minformation:[39m Include file: "valpotdao.hpp" not found. [missingInclude][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/valpotdao.cpp:3:0: [31minformation:[39m Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+
+^
+[1m../../../OldDesk/Project/graduation_work/src/valpotdao.cpp:4:0: [31minformation:[39m Include file: <ctime> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem][0m
+
+^
