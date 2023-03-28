@@ -5,7 +5,7 @@ PROJECT(ClickHouseDAO VERSION 0.0.1)
 FILE(GLOB ClickHouseDAO_file_cpp
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
 )
-SET(CLICKHOUSE_DIR "/clickhouse-cpp/")
+SET(CLICKHOUSE_DIR "/home/ivan/OldDesk/Project/clickhouse-cpp/")
 #INCLUDE (subdirs)
 
 ADD_EXECUTABLE(${PROJECT_NAME}
@@ -24,7 +24,7 @@ include_directories(
     ${CLICKHOUSE_DIR}
 )
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
-    /clickhouse-cpp/build/clickhouse/libclickhouse-cpp-lib.so
+    /home/ivan/OldDesk/Project/clickhouse-cpp/build/clickhouse/libclickhouse-cpp-lib.so
 )
 #TARGET_LINK_LIBRARIES(${PROJECT_NAME}
 #    clickhouse-cpp-lib

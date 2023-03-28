@@ -1,0 +1,13 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get -y install git cmake make g++
+
+RUN git clone https://github.com/abseil/abseil-cpp.git && cd abseil-cpp \
+    && mkdir build && cd build && cmake .. && make install
+RUN git clone https://github.com/ClickHouse/clickhouse-cpp.git && cd clickhouse-cpp \
+    && mkdir build && cd build && cmake -DBUILD_SHARED_LIBS=ON .. && make
+ADD ./src /app/src
+ADD ./include /app/include
+ADD ./CMakeLists.txt /app
+WORKDIR /app/build
+#RUN cmake .. && cmake --build .
